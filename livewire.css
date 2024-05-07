@@ -1,0 +1,966 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/*
+.nav1 {
+  border: 1px solid #ededeb;
+  height: 30px;
+  padding: 15px 15px 15px 80px;
+}
+
+.nav1 a {
+  float: left;
+  color: #150ebf;
+  text-decoration: none;
+  font-size: 18px;
+  margin-left: 40px;
+}
+
+.nav1 a i {
+  background-image: linear-gradient(to left, #ff0099, #493240);
+  background-size: cover;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+*/
+.nav2 {
+  padding: 0px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ededeb;
+}
+
+.nav2 button {
+  font-size: 15px;
+  height: 35px;
+  width: 150px;
+  padding: 0px 10px;
+  border: none;
+  border-radius: 5px;
+  background-image: linear-gradient(to left, #150ebf, black);
+  color: white;
+}
+
+.nav2 button:hover {
+  color: white;
+  background-image: linear-gradient(to right, #150ebf, black);
+}
+
+.abc {
+  margin-left: 200px;
+}
+
+.abc ul {
+  list-style-type: none;
+  margin-left: -100px;
+}
+
+.abc li {
+  float: left;
+  padding-left: 50px;
+}
+.abc li a {
+  padding: 15px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #150ebf;
+}
+
+.abc .li:hover {
+  background-color: black;
+}
+
+.abc li a:hover {
+  background-color: #150ebf;
+  color: white;
+}
+
+.dcontent1,
+.dcontent2,
+.dcontent3,
+.dcontent4 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  position: absolute;
+}
+.dcontent1 a,
+.dcontent2 a,
+.dcontent3 a,
+.dcontent4 a {
+  display: none;
+  float: left;
+  background-color: white;
+}
+
+.drop1:hover .dcontent1 a {
+  display: block;
+}
+
+.drop2:hover .dcontent2 a {
+  display: block;
+}
+
+.drop3:hover .dcontent3 a {
+  display: block;
+}
+.drop4:hover .dcontent4 a {
+  display: block;
+}
+
+.bigpic {
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+}
+
+.nav3 {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 300px;
+  justify-content: space-between;
+  width: 80%;
+  height: 100px;
+  background-color: white;
+  box-shadow: 0px 0px 10px #ededeb, 0px 0px 10px #ededeb;
+  margin: -30px 0px 0px 100px;
+  padding-left: 50px;
+}
+
+.nav3 {
+}
+.box {
+  padding: 50px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box1 {
+  width: 40%;
+  font-size: 1.2rem;
+  word-spacing: 5px;
+}
+
+.pic1 {
+}
+
+.box4 {
+  background-color: #e9f7f7;
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.box5 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.box5 .h1 {
+  width: 470px;
+  font-size: 35px;
+  border-bottom: 5px solid transparent;
+  border-image: linear-gradient(90deg, #150ebf, black) 1;
+  background-image: linear-gradient(#150ebf, black);
+  background-size: cover;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.mec,.it,.civil,.bus,.elect,.manage/*,.elec,.des*/ {
+  width: 350px;
+  margin: 20px 40px;
+  height: 480px;
+  font-size: 18px;
+  border: 1px solid #ededeb;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #2cbfbf, 0px 0px 20px #2cbfbf;
+}
+
+.mec p,
+h1,
+.it p,
+h1,
+.civil p,
+h1,
+.bus p,
+h1,
+.elect p,
+h1,
+.manage p,
+h1 {
+  padding-left: 10px;
+}
+
+.mec img,
+.it img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.mec button,
+.it button {
+  padding: 10px;
+  font-size: 15px;
+  background-image: linear-gradient(to left, #150ebf, black);
+  border: none;
+  margin-left: 50px;
+  color: white;
+  border-radius: 30px;
+  width: 230px;
+  text-align: center;
+}
+
+.mec button:hover,
+.it button:hover {
+  color: white;
+  background-image: linear-gradient(to right, #150ebf, black);
+}
+
+.meccon,
+.itcon {
+  display: none;
+  width: 400px;
+  height: 440px;
+  margin: -465px 0px 0px -50px;
+  position: relative;
+  color: black;
+  z-index: 1;
+}
+.mecdrop:hover .meccon,
+.itdrop:hover .itcon {
+  display: block;
+}
+
+.civil img,
+.bus img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.civil button,
+.bus button {
+  padding: 10px;
+  margin-left: 50px;
+  font-size: 15px;
+  background-image: linear-gradient(to left, #150ebf, black);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  width: 230px;
+  text-align: center;
+}
+
+.civil button:hover,
+.bus button:hover {
+  color: white;
+  background-image: linear-gradient(to right, #150ebf, black);
+}
+
+.civilcon,
+.buscon {
+  display: none;
+  width: 400px;
+  height: 440px;
+  margin: -465px 0px 0px -50px;
+  position: relative;
+  color: black;
+  z-index: 1;
+}
+.civildrop:hover .civilcon,
+.busdrop:hover .buscon {
+  display: block;
+}
+
+.elect img,
+.manage img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.elect button,
+.manage button {
+  padding: 10px;
+  margin-left: 50px;
+  font-size: 15px;
+  background-image: linear-gradient(to left, #150ebf, black);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  width: 230px;
+  text-align: center;
+}
+
+.elect button:hover,
+.manage button:hover {
+  color: white;
+  background-image: linear-gradient(to right, #150ebf, black);
+}
+
+.electcon,
+.managecon {
+  display: none;
+  width: 400px;
+  height: 440px;
+  margin: -465px 0px 0px -50px;
+  position: relative;
+  color: black;
+  z-index: 1;
+}
+.electdrop:hover .electcon,
+.managedrop:hover .managecon {
+  display: block;
+}
+/*
+.elec img,.des img {
+border-top-left-radius:10px;
+border-top-right-radius:10px;
+}
+
+.elec button,.des button{
+padding:10px;
+margin-left:10px;
+font-size:15px;
+background-image:linear-gradient(to left,#150EBF,black);
+border:none;
+border-radius:30px;
+color:white;
+width:230px;
+text-align:center;
+}
+
+.elec button:hover,.des button:hover{
+color:white;
+background-image:linear-gradient(to right,#150EBF,black);	
+}
+
+.eleccon,.descon{
+display:none;
+width:1300px;
+height:440px;
+margin:-465px 0px 0px -1025px;
+position:relative;
+color:black;
+z-index:1;
+}
+*/
+.elecdrop:hover .eleccon,
+.desdrop:hover .descon {
+  display: block;
+}
+
+.mec1 ul,
+.civil1 ul,
+.it1 ul {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-row-gap: 20px;
+}
+.elect1 ul,
+.bus1 ul,
+.manage ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.mec1,
+.civil1,
+.elect1,
+.it1,
+.bus1,
+.manage1 {
+  background-color: white;
+  position: absolute;
+  width: 350px;
+  height: 430px;
+  margin: -20px 0px 0px 50px;
+  font-size: 15px;
+  text-align: start;
+  border: 1px solid #ededeb;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #2cbfbf, 0px 0px 20px #2cbfbf;
+}
+.left,
+.left1 {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 350px;
+  height: 485px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #2cbfbf, 0px 0px 20px #2cbfbf;
+  z-index: 1;
+}
+.left {
+  margin: -30px 0px 0px 390px;
+}
+.left1 {
+  margin: -30px 0px 0px -470px;
+}
+.right1 {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 350px;
+  height: 485px;
+  margin: -30px 0px 0px 230px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #2cbfbf, 0px 0px 20px #2cbfbf;
+  z-index: 1;
+}
+.sap:hover .left,
+.sap:hover .left1,
+.sap:hover .right1 {
+  display: block;
+}
+.left img,
+.left1 img {
+  width: 100%;
+  height: 200px;
+}
+.right1 img {
+  width: 100%;
+  height: 200px;
+}
+
+/*
+.java{
+background-color:white;
+position:absolute;
+width:250px;
+height:410px;
+margin:0px 0px 0px 375px;
+font-size:18px;
+text-align:start;
+border:1px solid #ededeb;
+border-radius:10px;
+box-shadow:0px 0px 10px #2cbfbf,0px 0px 20px #2cbfbf;
+}
+
+.c h1,p{
+	padding-left:10px;
+}
+
+.c img,.java img {
+border-top-left-radius:10px;
+border-top-right-radius:10px;
+}
+
+
+.android{
+background-color:white;
+position:absolute;
+width:250px;
+height:410px;
+margin:0px 0px 0px 700px;
+font-size:18px;
+text-align:start;
+border:1px solid #ededeb;
+border-radius:10px;
+box-shadow:0px 0px 10px #2cbfbf,0px 0px 20px #2cbfbf;
+}
+
+.dj{
+background-color:white;
+position:absolute;
+width:250px;
+height:410px;
+margin:0px 0px 0px 1025px;
+font-size:18px;
+text-align:start;
+border:1px solid #ededeb;
+border-radius:10px;
+box-shadow:0px 0px 10px #2cbfbf,0px 0px 20px #2cbfbf;
+}
+
+.android img,.dj img {
+border-top-left-radius:10px;
+border-top-right-radius:10px;
+}*/
+
+.spic {
+  padding-left: 70px;
+  margin-top: 50px;
+}
+
+.box6 .h1 {
+  color: rgba(60, 6, 130, 1);
+  margin: 150px 0px 0px 530px;
+  width: 400px;
+  font-size: 35px;
+  border-bottom: 5px solid transparent;
+  border-image: linear-gradient(90deg, #150ebf, black) 1;
+  background-image: linear-gradient(#150ebf, black);
+  background-size: cover;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.box7 {
+  position: relative;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  height: 800px;
+  color: white;
+  padding-left: 75px;
+}
+
+.box7 img {
+  float: left;
+  position: absolute;
+  border-radius: 30px;
+}
+
+.box7 h1 {
+  position: absolute;
+  font-size: 30px;
+  margin: 170px 0px 0px 20px;
+}
+.box7 a {
+  position: absolute;
+  color: white;
+  margin: 270px 0px 0px 20px;
+}
+.software h1 {
+  margin-top: -100px;
+}
+.tpic {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 10px;
+}
+.box8 {
+  padding: 100px;
+  width: 450px;
+}
+
+.box8 .a {
+  font-size: 18px;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+.box8 button {
+  background-image: linear-gradient(to left, #150ebf, black);
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+  margin-left: 30px;
+  border: none;
+  border-radius: 30px;
+}
+.box8 button:hover {
+  color: white;
+  background-image: linear-gradient(to right, #150ebf, black);
+}
+
+.box8 a i {
+  padding-left: 10px;
+}
+
+.box9 {
+  background-color: #e9f7f7;
+  padding-top: 30px;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 100px;
+}
+
+.madiha {
+  width: 500px;
+  padding-left: 150px;
+}
+
+.madiha h1 {
+  font-size: 35px;
+  color: rgba(60, 6, 130, 1);
+}
+
+.madiha p {
+  font-size: 21px;
+  line-height: 30px;
+}
+
+.madiha a {
+  font-size: 20px;
+  color: black;
+}
+
+.box10 {
+  margin-top: 50px;
+  padding: 0px 50px;
+}
+.box10 h1 {
+  font-size: 35px;
+  color: rgba(60, 6, 130, 1);
+  height: 30px;
+}
+
+.std {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.stadd,
+.java,
+.civils,
+.tally,
+.tally1,
+.stadd1 {
+  width: 350px;
+  height: 250px;
+  border: 2px solid #3C0682;
+  border-radius: 10px;
+  padding: 10px 10px 10px 20px;
+}
+
+.pradeesh,
+.rajesh,
+.senthil,
+.samy,
+.thanga,
+.bab {
+  width: 350px;
+  height: 50px;
+}
+.pradeesh h4,
+.rajesh h4,
+.senthil h4,
+.samy h4,
+.thanga h4,
+.bab h4 {
+  margin: -45px 0px 0px 60px;
+}
+.pradeesh p,
+.rajesh p,
+.senthil p,
+.samy p,
+.thanga p,
+.bab p {
+  margin: 0px 0px 0px 60px;
+}
+
+.stadd .p01,
+.java .p01,
+.civils .p01,
+.tally .p01,
+.tally1 .p01,
+.stadd1 .p01 {
+  margin-top: 70px;
+}
+.stadd i,
+.java i,
+.tally i {
+  margin-top: 30px;
+}
+.civils i {
+  margin-top: 70px;
+}
+.tally1 i {
+  margin-top: 10px;
+}
+.stadd1 i {
+  margin-top: 50px;
+}
+.box11 {
+  background-color: #e9f7f7;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.trained,
+.domain,
+.location,
+.college {
+  padding: 50px 40px;
+}
+.trained h1,
+.domain h1,
+.location h1,
+.college h1 {
+  font-size: 45px;
+  margin: 0px 0px 0px 50px;
+  background-image: linear-gradient(#150ebf, black);
+  background-size: cover;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.trained h3,
+.domain h3,
+.location h3,
+.college h3 {
+  position: absolute;
+  font-size: 20px;
+  margin: 0px 0px 0px 50px;
+}
+.trained i,
+.domain i,
+.location i,
+.college i {
+  position: absolute;
+  font-size: 40px;
+  margin-top: 20px;
+  background-image: linear-gradient(#150ebf, black);
+  background-size: cover;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.box12 {
+  margin: 100px 0px 50px 0px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.box12 h1 {
+  width: 350px;
+  font-size: 2.8rem;
+  font-weight: 900;
+  border-bottom: 5px solid transparent;
+  border-image: linear-gradient(90deg, #150ebf, black) 1;
+  background-image: linear-gradient(#150ebf, black);
+  background-size: cover;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.box13 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
+  gap: 200px;
+  padding: 50px 0px;
+}
+
+.box14 {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.box15 {
+  padding: 150px 100px;
+  width: 520px;
+}
+
+.box15 h1 {
+  font-size: 40px;
+  color: rgba(60, 6, 130, 1);
+}
+.box15 p {
+  font-size: 20px;
+}
+.box15 a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.box16 {
+  background-color: #351e5b;
+  color: white;
+  padding: 20px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.box16 h1 {
+  width: 100%;
+  text-align: center;
+  text-shadow: 10px 10px 20px black;
+}
+
+address {
+  width: 300px;
+  font-size: 18px;
+  padding: 5px 0px;
+  text-shadow: 10px 10px 20px black;
+}
+.get {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.get a i {
+  padding-right: 10px;
+}
+.box16 a {
+  padding: 10px;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  text-shadow: 10px 10px 20px black;
+}
+/*
+.quick{
+width:150px;
+height:280px;
+padding-left:50px;
+	}
+.quick ul{
+position:absolute;
+list-style-type:none;
+padding:0px;
+line-height:30px;
+}
+	
+.offered{
+width:250px;
+height:280px;
+padding-left:50px;
+	}
+.offered ul{
+position:absolute;
+list-style-type:none;
+padding:0px;
+line-height:30px;
+	}
+	
+.course{
+width:250px;
+height:280px;
+padding-left:50px;
+	}
+.course ul{
+position:absolute;
+list-style-type:none;
+padding:0px;
+line-height:30px;
+	}
+	*/
+.box17 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: end;
+  column-gap: 100px;
+}
+
+.box18 {
+  background-color: #351e5b;
+  padding: 10px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: end;
+}
+
+.box18 a {
+  color: white;
+  text-decoration: none;
+  text-shadow: 10px 10px 20px black;
+  padding: 0px 10px;
+}
+
+.box20 {
+  font-size: 25px;
+}
+.box20 i {
+  font-size: 1.5rem;
+  color: white;
+  padding: 0px 15px;
+  text-shadow: 10px 10px 20px black;
+}
+
+.box20 i:hover {
+  scale: 1.5;
+}
+
+@media screen and (max-width: 600px) {
+  .bigpic {
+    width: 100%;
+  }
+  .nav1,
+  .email,
+  .nav2 a {
+    display: none;
+  }
+  .nav3 {
+    height: auto;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .nav3 .group1 {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .box1,
+  .box img {
+    width: 100%;
+  }
+
+  .mec,
+  .it,
+  .civil,
+  .bus,
+  .elect,
+  .manage,
+  .elec,
+  .des {
+    width: 80%;
+  }
+  .mec button,
+  .it button,
+  .civil button,
+  .bus button,
+  .elect button,
+  .manage button,
+  .elec button,
+  .des button {
+    margin:0px;
+    width: 100%;
+  }
+
+
+  .spic {
+    margin: 30px 0px 0px -50px;
+    width: 100%;
+  }
+  .box8 {
+    width: 100%;
+    padding-left: 20px;
+    margin: 20px 0px;
+  }
+  .box8 .a {
+    width: 100%;
+    margin-left: 118px;
+    text-align: center;
+  }
+  .box8 button {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .hmoon {
+    width: 100%;
+  }
+  .madiha {
+    padding: 20px 20px;
+  }
+  .box14 img {
+    width: 100%;
+  }
+}
